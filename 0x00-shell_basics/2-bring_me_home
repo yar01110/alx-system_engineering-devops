@@ -1,2 +1,2 @@
 #!/bin/bash
-cd $(cut -d: -f6 < $(grep -w $USER /etc/passwd))
+cd ~
