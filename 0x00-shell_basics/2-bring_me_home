@@ -1,2 +1,2 @@
 #!/bin/bash
-printf '%s\n' "$(getent passwd "$USER" | cut -d: -f6)"
+cd $(cut -d: -f6 < $(grep -w $USER /etc/passwd))
